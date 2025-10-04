@@ -14,11 +14,11 @@ import {
 import { privateKeyToAccount } from "viem/accounts"
 import * as chains from "viem/chains"
 import { createCustomError } from "../evm-utils/common"
-import { ChainClientConfigService } from "./chain-client-config.service"
+import { IChainClientConfigService } from "./chain-client-config.service"
 import { IChainClientService } from "./chain-client-service-interface"
 
 export class ChainClientService implements IChainClientService {
-	constructor(private readonly config: ChainClientConfigService) {}
+	constructor(private readonly config: IChainClientConfigService) {}
 
 	public customError = createCustomError("ChainClientService")
 
