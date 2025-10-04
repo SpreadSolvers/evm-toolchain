@@ -1,6 +1,6 @@
 {
 	"name": "@spread-solvers/evm-toolchain",
-	"version": "0.0.5",
+	"version": "0.0.11",
 	"description": "EVM utilities for blockchain interactions",
 	"author": "Spread Solvers Collective",
 	"main": "dist/index.js",
