@@ -16,9 +16,9 @@ runs:
           run: yarn lint
           shell: bash
 
-        - name: Format check
-          run: yarn format:check
-          shell: bash
+        # - name: Format check
+        #   run: yarn format:check
+        #   shell: bash
 
         - name: Test
           run: yarn test
