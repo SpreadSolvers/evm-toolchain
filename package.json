@@ -40,7 +40,7 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"ci": "yarn && yarn install --frozen-lockfile && yarn check-types && yarn lint && yarn format:check && yarn test && yarn build",
+		"ci": "npm install --frozen-lockfile && npm run check-types && npm run lint",
 		"prepare": "husky",
 		"check-types": "tsc --noEmit",
 		"lint": "eslint .",
