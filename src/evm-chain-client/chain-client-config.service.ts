@@ -2,7 +2,13 @@ import { Chain, Hex } from "viem"
 import { privateKeyToAddress } from "viem/accounts"
 import { RpcUrl } from "./types"
 
-export class ChainClientConfigService {
+export interface IChainClientConfigService {
+	privateKey: Hex
+	rpcSettings?: Record<number, { rpcUrls: RpcUrl[]; disableDefaultRpcUrl: boolean } | undefined>
+	customChains?: Chain[]
+}
+
+export class ChainClientConfigService implements IChainClientConfigService {
 	privateKey!: Hex
 	rpcSettings?: Record<number, { rpcUrls: RpcUrl[]; disableDefaultRpcUrl: boolean } | undefined>
 	customChains?: Chain[]
