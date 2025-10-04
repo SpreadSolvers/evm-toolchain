@@ -6,6 +6,10 @@
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SpreadSolvers/evm-toolchain"
+	},
 	"files": [
 		"dist/**/*",
 		"README.md",
@@ -60,7 +64,7 @@
 	},
 	"lint-staged": {
 		"*.{js,ts}": "yarn lint:fix",
-		"*": "yarn format"
+		"*.{js,ts,json,md,yml,yaml,toml,yaml}": "yarn format"
 	},
 	"commitlint": {
 		"extends": [
