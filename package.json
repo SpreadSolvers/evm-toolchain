@@ -1,6 +1,6 @@
 {
 	"name": "@spread-solvers/evm-toolchain",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"description": "EVM utilities for blockchain interactions",
 	"author": "Spread Solvers Collective",
 	"main": "dist/index.js",
@@ -20,6 +20,26 @@
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js",
 			"require": "./dist/index.js"
+		},
+		"./caip-id": {
+			"types": "./dist/caip-id/index.d.ts",
+			"import": "./dist/caip-id/index.js",
+			"require": "./dist/caip-id/index.js"
+		},
+		"./utils": {
+			"types": "./dist/evm-utils/index.d.ts",
+			"import": "./dist/evm-utils/index.js",
+			"require": "./dist/evm-utils/index.js"
+		},
+		"./primitives": {
+			"types": "./dist/evm-primitives/index.d.ts",
+			"import": "./dist/evm-primitives/index.js",
+			"require": "./dist/evm-primitives/index.js"
+		},
+		"./client": {
+			"types": "./dist/evm-chain-client/index.d.ts",
+			"import": "./dist/evm-chain-client/index.js",
+			"require": "./dist/evm-chain-client/index.js"
 		}
 	},
 	"license": "MIT",
