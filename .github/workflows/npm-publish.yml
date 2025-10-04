@@ -24,6 +24,9 @@ jobs:
             - name: Update npm
               run: npm install -g npm@latest
 
-            - run: npm run build
+            - name: Setup
+              run: yarn install --frozen-lockfile
+
+            - run: yarn build
 
             - run: npm publish
