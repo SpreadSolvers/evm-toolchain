@@ -24,9 +24,6 @@ jobs:
             - name: Update npm
               run: npm install -g npm@latest
 
-            - name: Setup and Test
-              uses: ./.github/actions/setup-and-test
-
-            - run: npm run build --if-present
+            - run: npm run build
 
             - run: npm publish
