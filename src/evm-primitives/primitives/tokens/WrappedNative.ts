@@ -1,3 +1,4 @@
+import { type Address } from "viem"
 import {
 	arbitrum,
 	base,

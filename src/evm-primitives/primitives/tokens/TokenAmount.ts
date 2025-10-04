@@ -1,3 +1,4 @@
+import { type Address } from "viem"
 import { ChainClientService } from "../../../evm-chain-client/chain-client.service"
 import { createCustomError } from "../../../evm-utils/common"
 import { NativeCurrency } from "./NativeCurrency"

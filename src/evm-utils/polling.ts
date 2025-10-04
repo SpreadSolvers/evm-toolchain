@@ -20,7 +20,7 @@ export async function poll<T>(
 		return response
 	}
 
-	let timeoutId: NodeJS.Timeout
+	let timeoutId: ReturnType<typeof setTimeout>
 
 	const timeoutPromise = new Promise<never>((_, reject) => {
 		timeoutId = setTimeout(() => {

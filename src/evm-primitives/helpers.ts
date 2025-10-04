@@ -1,4 +1,4 @@
-import { pad } from "viem"
+import { pad, type Address, type Hex } from "viem"
 
 export function shortenAddress(address: string): string {
 	return address.slice(0, 6) + "..." + address.slice(-4)
