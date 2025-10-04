@@ -22,20 +22,8 @@ jobs:
                   node-version: "20"
                   cache: "yarn"
 
-            - name: Install dependencies
-              run: yarn install --frozen-lockfile
-
-            - name: Type check
-              run: yarn check-types
-
-            - name: Lint
-              run: yarn lint
-
-            - name: Format check
-              run: yarn format:check
-
-            - name: Test
-              run: yarn test
+            - name: CI check & build
+              run: yarn ci
 
     publish-npm:
         needs: build
@@ -48,22 +36,6 @@ jobs:
                   node-version: "20"
                   cache: "yarn"
 
-            - name: Install dependencies
-              run: yarn install --frozen-lockfile
-
-            - name: Type check
-              run: yarn check-types
-
-            - name: Lint
-              run: yarn lint
-
-            - name: Format check
-              run: yarn format:check
-
-            - name: Test
-              run: yarn test
-
-            - run: npm ci
-            - run: npm publish
+            - run: yarn publish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.npm_token}}

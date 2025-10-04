@@ -36,7 +36,7 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"ci": "yarn && yarn install --frozen-lockfile && yarn check-types && yarn lint && yarn format:check && yarn test",
+		"ci": "yarn && yarn install --frozen-lockfile && yarn check-types && yarn lint && yarn format:check && yarn test && yarn build",
 		"prepare": "husky",
 		"check-types": "tsc --noEmit",
 		"lint": "eslint .",
