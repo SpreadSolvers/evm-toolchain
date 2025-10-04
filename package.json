@@ -1,47 +1,19 @@
 {
 	"name": "@spread-solvers/evm-toolchain",
-	"version": "0.0.19",
+	"version": "0.0.20",
 	"description": "EVM utilities for blockchain interactions",
 	"author": "Spread Solvers Collective",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"main": "./lib/index.js",
 	"private": false,
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/SpreadSolvers/evm-toolchain"
 	},
 	"files": [
-		"dist/**/*",
+		"lib/**/*",
 		"README.md",
 		"LICENSE"
 	],
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.js",
-			"require": "./dist/index.js"
-		},
-		"./caip-id": {
-			"types": "./dist/caip-id/index.d.ts",
-			"import": "./dist/caip-id/index.js",
-			"require": "./dist/caip-id/index.js"
-		},
-		"./evm-utils": {
-			"types": "./dist/evm-utils/index.d.ts",
-			"import": "./dist/evm-utils/index.js",
-			"require": "./dist/evm-utils/index.js"
-		},
-		"./evm-primitives": {
-			"types": "./dist/evm-primitives/index.d.ts",
-			"import": "./dist/evm-primitives/index.js",
-			"require": "./dist/evm-primitives/index.js"
-		},
-		"./evm-chain-client": {
-			"types": "./dist/evm-chain-client/index.d.ts",
-			"import": "./dist/evm-chain-client/index.js",
-			"require": "./dist/evm-chain-client/index.js"
-		}
-	},
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
@@ -52,7 +24,7 @@
 		"test": "echo 'No test framework implemented'",
 		"format": "prettier . --write",
 		"format:check": "prettier . --check",
-		"build": "tsc",
+		"build": "tsc -p tsconfig.build.json",
 		"prepublishOnly": "npm run build"
 	},
 	"prettier": {
