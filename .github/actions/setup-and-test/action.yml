@@ -5,21 +5,21 @@ runs:
     using: "composite"
     steps:
         - name: Install dependencies
-          run: yarn install --frozen-lockfile
+          run: npm install --frozen-lockfile
           shell: bash
 
         - name: Type check
-          run: yarn check-types
+          run: npm check-types
           shell: bash
 
         - name: Lint
-          run: yarn lint
+          run: npm lint
           shell: bash
 
         # - name: Format check
-        #   run: yarn format:check
+        #   run: npm format:check
         #   shell: bash
 
         - name: Test
-          run: yarn test
+          run: npm test
           shell: bash

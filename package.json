@@ -25,11 +25,10 @@
 	"license": "MIT",
 	"type": "module",
 	"scripts": {
-		"ci": "yarn install --frozen-lockfile && yarn run check-types && yarn run lint",
 		"prepare": "husky",
 		"check-types": "tsc --noEmit",
 		"lint": "eslint .",
-		"lint:fix": "yarn lint --fix",
+		"lint:fix": "npm lint --fix",
 		"test": "echo 'No test framework implemented'",
 		"format": "prettier . --write",
 		"format:check": "prettier . --check",
@@ -48,8 +47,8 @@
 		"semi": false
 	},
 	"lint-staged": {
-		"*.{js,ts}": "yarn lint:fix",
-		"*.{js,ts,json,md,yml,yaml,toml,yaml}": "yarn format"
+		"*.{js,ts}": "npm lint:fix",
+		"*.{js,ts,json,md,yml,yaml,toml,yaml}": "npm format"
 	},
 	"commitlint": {
 		"extends": [
