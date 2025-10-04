@@ -18,5 +18,9 @@ jobs:
             - name: Setup, Lint, Test, and Build
               uses: ./.github/actions/setup-and-test
 
-            - name: Publish
-              run: npm publish
+            - name: Update npm
+              run: npm install -g npm@latest
+            
+            - run: npm run build --if-present
+            
+            - run: npm publish
