@@ -7,8 +7,8 @@ on:
         branches: [main, develop]
 
 jobs:
-    pre-commit-checks:
-        name: Pre-commit Checks
+    setup-test-and-build:
+        name: Setup, Lint, Test, and Build
         runs-on: ubuntu-latest
 
         steps:
