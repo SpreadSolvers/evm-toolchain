@@ -59,8 +59,7 @@
 		"semi": false
 	},
 	"lint-staged": {
-		"*.{js,ts}": "yarn lint:fix",
-		"*.{js,ts,json}": "yarn format"
+		"*": "yarn lint:fix && yarn format"
 	},
 	"commitlint": {
 		"extends": [
