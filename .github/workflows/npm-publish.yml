@@ -19,4 +19,4 @@ jobs:
               uses: ./.github/actions/setup-and-test
 
             - name: Publish
-              run: yarn publish
+              run: npm publish
