@@ -8,7 +8,7 @@ on:
 
 jobs:
     setup-test-and-build:
-        name: Setup, Lint, Test, and Build
+        name: Setup, Lint and Test
         runs-on: ubuntu-latest
 
         steps:
