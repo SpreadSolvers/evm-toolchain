@@ -1,22 +1,22 @@
 name: Publish Package
 
 on:
-  push:
-    tags:
-      - 'v*'
+    push:
+        tags:
+            - "v*"
 
 permissions:
-  id-token: write  # Required for OIDC
-  contents: read
+    id-token: write # Required for OIDC
+    contents: read
 
 jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
 
-      - name: Setup, Lint, Test, and Build
-        uses: ./.github/actions/setup-and-test
+            - name: Setup, Lint, Test, and Build
+              uses: ./.github/actions/setup-and-test
 
-      - name: Publish
-        run: yarn publish
+            - name: Publish
+              run: yarn publish
