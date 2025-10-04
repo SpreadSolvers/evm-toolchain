@@ -14,16 +14,8 @@ jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v4
-
-            - name: Setup Node.js
-              uses: actions/setup-node@v4
-              with:
-                  node-version: "20"
-                  cache: "yarn"
-
-            - name: CI check & build
-              run: yarn ci
+            - name: Setup and Test
+              uses: ./.github/actions/setup-and-test
 
     publish-npm:
         needs: build
