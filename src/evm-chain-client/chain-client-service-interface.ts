@@ -1,4 +1,4 @@
-import { Chain, FallbackTransport, LocalAccount, PublicClient, WalletClient } from "viem"
+import type { Chain, FallbackTransport, LocalAccount, PublicClient, WalletClient } from "viem"
 
 export interface IChainClientService {
 	// constructor(private readonly config: ChainClientConfigService) {}

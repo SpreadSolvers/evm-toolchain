@@ -1,6 +1,6 @@
-import { Address, isAddressEqual } from "viem"
-import { IChainClientService } from "../../../evm-chain-client/chain-client-service-interface"
-import { TokenMetadata } from "./IToken"
+import { type Address, isAddressEqual } from "viem"
+import type { IChainClientService } from "../../../evm-chain-client/chain-client-service-interface"
+import type { TokenMetadata } from "./IToken"
 import { TokenBase } from "./TokenBase"
 import { NativeCurrencyError } from "./TokenErrors"
 

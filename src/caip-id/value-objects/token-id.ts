@@ -1,5 +1,5 @@
 import z from "zod"
-import { ChainId } from "./chain-id"
+import type { ChainId } from "./chain-id"
 
 const namespacePattern = "[-a-z0-9]{3,8}"
 const referencePattern = "[-_a-zA-Z0-9]{1,32}"

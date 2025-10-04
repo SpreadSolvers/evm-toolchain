@@ -1,21 +1,21 @@
 import {
-	Chain,
+	type Chain,
 	createPublicClient,
 	createWalletClient,
 	fallback,
-	FallbackTransport,
+	type FallbackTransport,
 	http,
-	HttpTransportConfig,
-	LocalAccount,
-	PublicClient,
-	Transport,
-	WalletClient,
+	type HttpTransportConfig,
+	type LocalAccount,
+	type PublicClient,
+	type Transport,
+	type WalletClient,
 } from "viem"
 import { privateKeyToAccount } from "viem/accounts"
 import * as chains from "viem/chains"
 import { createCustomError } from "../evm-utils/common"
-import { IChainClientConfigService } from "./chain-client-config.service"
-import { IChainClientService } from "./chain-client-service-interface"
+import type { IChainClientConfigService } from "./chain-client-config.service"
+import type { IChainClientService } from "./chain-client-service-interface"
 
 export class ChainClientService implements IChainClientService {
 	constructor(private readonly config: IChainClientConfigService) {}

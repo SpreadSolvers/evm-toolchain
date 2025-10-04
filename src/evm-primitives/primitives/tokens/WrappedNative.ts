@@ -12,7 +12,7 @@ import {
 	superposition,
 	swellchain,
 } from "viem/chains"
-import { IChainClientService } from "../../../evm-chain-client/chain-client-service-interface"
+import { type IChainClientService } from "../../../evm-chain-client/chain-client-service-interface"
 import { WETH_ABI } from "../../abi/weth"
 import type { TokenMetadata } from "./IToken"
 import { NativeCurrency } from "./NativeCurrency"

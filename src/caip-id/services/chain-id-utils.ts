@@ -1,5 +1,5 @@
 import { createCustomError } from "../../evm-utils/common"
-import { ChainId, chainIdScheme } from "../value-objects/chain-id"
+import { type ChainId, chainIdScheme } from "../value-objects/chain-id"
 
 export const ChainIdError = createCustomError("ChainIdError")
 

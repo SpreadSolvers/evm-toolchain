@@ -1,5 +1,5 @@
-import { Address, getAddress, isAddress } from "viem"
-import { IChainClientService } from "../../../evm-chain-client/chain-client-service-interface"
+import { type Address, getAddress, isAddress } from "viem"
+import type { IChainClientService } from "../../../evm-chain-client/chain-client-service-interface"
 import { createCustomError } from "../../../evm-utils/common"
 
 export const BaseContractError = createCustomError("BaseContractError")

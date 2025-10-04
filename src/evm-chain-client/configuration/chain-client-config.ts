@@ -1,5 +1,5 @@
 import { z } from "zod"
-import { ChainClientConfig, CustomChain, RpcSettings, RpcUrl } from "../types"
+import type { ChainClientConfig, CustomChain, RpcSettings, RpcUrl } from "../types"
 
 export const CHAIN_CLIENT_CONFIG_KEY = "chainClientConfig"
 

@@ -1,4 +1,4 @@
-import { TokenId } from "../../../caip-id/value-objects/token-id"
+import type { TokenId } from "../../../caip-id/value-objects/token-id"
 
 export type IToken = {
 	id: TokenId

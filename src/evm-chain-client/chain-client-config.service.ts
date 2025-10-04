@@ -1,6 +1,6 @@
-import { Chain, Hex } from "viem"
+import type { Chain, Hex } from "viem"
 import { privateKeyToAddress } from "viem/accounts"
-import { RpcUrl } from "./types"
+import type { RpcUrl } from "./types"
 
 export interface IChainClientConfigService {
 	privateKey: Hex

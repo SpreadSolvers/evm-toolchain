@@ -1,6 +1,6 @@
 import { createCustomError } from "../../evm-utils/common"
-import { ChainId } from "../value-objects/chain-id"
-import { TokenId, tokenIdScheme } from "../value-objects/token-id"
+import type { ChainId } from "../value-objects/chain-id"
+import { type TokenId, tokenIdScheme } from "../value-objects/token-id"
 
 export const TokenIdError = createCustomError("TokenIdError")
 

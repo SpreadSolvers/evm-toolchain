@@ -1,11 +1,11 @@
-import { Address, formatUnits, isAddressEqual, parseUnits } from "viem"
+import { type Address, formatUnits, isAddressEqual, parseUnits } from "viem"
 import { ChainIdUtils } from "../../../caip-id/services/chain-id-utils"
 import { TokenIdUtils } from "../../../caip-id/services/token-id-utils"
-import { TokenId } from "../../../caip-id/value-objects/token-id"
-import { IChainClientService } from "../../../evm-chain-client/chain-client-service-interface"
+import type { TokenId } from "../../../caip-id/value-objects/token-id"
+import type { IChainClientService } from "../../../evm-chain-client/chain-client-service-interface"
 import { shortenAddress } from "../../helpers"
 import { BaseContract } from "../contracts/BaseContract"
-import { IToken, TokenMetadata } from "./IToken"
+import type { IToken, TokenMetadata } from "./IToken"
 
 const NAMESPACE = "eip155"
 
