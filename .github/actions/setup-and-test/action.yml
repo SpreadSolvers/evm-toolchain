@@ -4,17 +4,6 @@ description: 'Setup Node.js, install dependencies, and run checks'
 runs:
   using: 'composite'
   steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 0 # Needed for commitlint
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: "20"
-        cache: "yarn"
-
     - name: Install dependencies
       run: yarn install --frozen-lockfile
       shell: bash

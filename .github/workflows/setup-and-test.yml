@@ -7,11 +7,6 @@ jobs:
   setup-and-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # Needed for commitlint
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
